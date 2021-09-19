@@ -1,0 +1,28 @@
+.container {
+
+}
+
+.image {
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+}
+
+.image:hover {
+  height: 300px;
+  width: 300px;
+  transition: all 0.2s ease-out;
+}
+
+.planetTitle {
+  position: absolute;
+  color: white;
+  font-size: xx-large;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 300;
+}
+
+.paragraph {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 200;
+}
