@@ -12,7 +12,7 @@ function ContactUsPage() {
     <>
       <div className='page'>
         <h1 className='title'>Contact Us!</h1>
-        <div className='planets-container'>
+        <div className='planets-group'>
           <Planet 
             image={tiktok}
             paragraph='@ap.stro'

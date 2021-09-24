@@ -1,4 +1,4 @@
-export default {
+const COLORS = {
   pink: '#rgba(240,151,178, 1)',
   blue: '#97b2f0',
   darkBlue: '#81a2ed',
