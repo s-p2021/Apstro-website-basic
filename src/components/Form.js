@@ -1,7 +1,7 @@
 import React from 'react'
-import Button from './Button'
 
 import './Form.css';
+// import Button from './Button.js'
 
 class Form extends React.Component {
 
@@ -17,24 +17,28 @@ class Form extends React.Component {
   render() {
     return (
       <>
-        <div>
+        <div className="form-container">
           <h1 class="title">What would you like to see on Apstro?</h1>
           <form onSubmit={() => {}} class="form">
-            <label class="label">
-              Name: 
-              <input 
-                type='text'
-                class="input-container"
-              />
-            </label>
-            <label class="label">
-              Email: 
-              <input 
-                type='text'
-                name='email'
-                class="input-container"
-              />
-            </label>
+            <div className='input-line'>
+              <label class="label">
+                Name: 
+                <input 
+                  type='text'
+                  class="input-container"
+                />
+              </label>
+            </div>
+            <div className='label-line'>
+              <label class="label">
+                Email: 
+                <input 
+                  type='text'
+                  name='email'
+                  class="input-container"
+                />
+              </label>
+            </div>
             <label class="label">
               Your feedback: 
               <input 
@@ -43,7 +47,7 @@ class Form extends React.Component {
                 class="input-container"
               />
             </label>
-            <Button title='Submit'/>
+            {/* <Button title='submit'/> */}
           </form>
         </div>
       </>

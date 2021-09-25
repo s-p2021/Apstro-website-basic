@@ -1,6 +1,7 @@
 .container {
   background-color: thistle;
-  height: 450px;
+  height: 100%;
+  min-height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;

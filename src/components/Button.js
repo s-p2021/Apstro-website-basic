@@ -1,37 +1,19 @@
 import React from 'react';
-import './Button.css';
-import { Link } from 'react-router-dom';
 
-const STYLES = ['btn--primary', 'btn--outline']
+import './Button.css'
 
-const SIZES = ['btn--medium', 'btn--large'];
-
-export const Button = ({
-  children, 
-  type, 
-  onClick, 
-  buttonStyle, 
-  buttonSize
-}) => {
-  const checkButtonStyle = STYLES.includes(buttonStyle) 
-    ? buttonStyle 
-    : STYLES[0];
-
-  const checkButtonSize = SIZES.includes(buttonSize)
-    ? buttonSize 
-    : SIZES[0]
-
-  return (
-    <Link to='/' className='btn-mobile'>
-      <button
-        classname={`btn ${checkButtonSize} ${checkButtonStyle}`}
-        onClick={onClick}
-        onType={type}
-      >
-        {children}
-      </button>
-    </Link>
+function Button(props) {
+  return(
+    <>
+      <div>
+        <Button 
+          onClick={props.onClick}
+        >
+          {props.title}
+        </Button>
+      </div>
+    </>
   )
 }
 
-export default Button
+export default Button; 

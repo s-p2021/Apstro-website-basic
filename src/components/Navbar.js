@@ -1,26 +1,16 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FiMenu } from 'react-icons/fi'
+import { BsFillTriangleFill } from 'react-icons/bs'
 
 import './Navbar.css';
-import { Button } from './Button'
 
 
 function Navbar() {
   const [ click, setClick ] = useState(false);
-  const [ button, setButton ] = useState(true)
 
   const handleClick = () => setClick(!click)
   const closeMobileMenu = () => setClick(false);
-
-  const showButton = () => {
-    if(window.innerWidth <= 960) {
-      setButton(false)
-    } else {
-      setButton(true)
-    }
-  }
-
-  window.addEventListener('resize', showButton);
 
   return (
     <>
@@ -30,30 +20,27 @@ function Navbar() {
             <h1>logo here</h1>
           </Link>
           <div class="menu-icon" onClick={handleClick}>
-            {click ? 'menu arrow down' : 'menu bars'}
+            {click ? 
+              <BsFillTriangleFill color='pink' size='35px'/> 
+              : <FiMenu color='pink' size='35px'/> 
+            }
           </div>
-          <ul className={click ? 'nav-menu-active' : 'nav-menu'}>
+          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/home' className='nav-links' onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
-          </ul>
-          <ul className={click ? 'nav-menu-active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
                 About
               </Link>
             </li>
-          </ul>
-          <ul className={click ? 'nav-menu-active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/contactus' className='nav-links' onClick={closeMobileMenu}>
                 Contact Us
               </Link>
             </li>
-          </ul>
-          <ul className={click ? 'nav-menu-active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/download' className='nav-links' onClick={closeMobileMenu}>
                 Download

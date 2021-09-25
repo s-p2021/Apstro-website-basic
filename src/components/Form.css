@@ -1,3 +1,13 @@
+.form-container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
 .title {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 100;
@@ -10,10 +20,10 @@
 
 .input-container {
   border: transparent;
-}
-
-.form {
-
+  background-color: transparent;
+  border-bottom: white;
+  border-bottom-width: thick;
+  width: 100%;
 }
 
 
