@@ -5,7 +5,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  background-color: white;
+  border-width: 2px;
+  border-color: gray;
+  text-shadow: white;
+  align-self: center;
 }
 
 .title {

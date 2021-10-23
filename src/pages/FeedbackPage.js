@@ -6,7 +6,7 @@ import Form from '../components/Form'
 function FeedbackPage() {
   return (
     <>
-      <div className='form-page' style={{backgroundColor: 'lightblue'}}>
+      <div className='form-page'>
         <Form />
       </div>
     </>
