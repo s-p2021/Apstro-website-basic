@@ -14,14 +14,13 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <Switch>
-          <Route path='/' exact />
-        </Switch>
-        <LandingPage />
-        <AboutPage />
-        <DownloadPage />
-        <FeedbackPage />
-        <ContactUsPage />
+        {/* <Switch> */}
+          <Route path="/home" exact component={LandingPage}/>
+          <Route path="/about" exact component={AboutPage}/>
+          <Route path="/download" exact component={DownloadPage}/>
+          <Route path="/feedback" exact component={FeedbackPage}/>
+          <Route path="/contactus" exact component={ContactUsPage}/>
+        {/* </Switch> */}
       </Router>
     </>
   );
