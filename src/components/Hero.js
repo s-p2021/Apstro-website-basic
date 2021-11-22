@@ -32,16 +32,25 @@ const ColumnLeft = styled.div`
   justify-content: center;
   align-items: flex-start;
   padding: 5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   h1 {
     margin-bottom: 0.5rem;
-    font-size: 2rem;
+    font-size: 7rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 200;
+    align-text: center;
   }
 
   p {
     margin: 2rem 0;
-    font-size: 4rem;
+    font-size: 2rem;
     line-height: 1.1;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 100;
+    align-text: centre
   }
 `;
 
@@ -54,14 +63,16 @@ const Button = styled(motion.button)`
   ouline: none;
   cursor: pointer;
   background: transparent;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 100;
 `
 
 const Image = styled(motion.img)`
   position: absolute;
   width: 100%;
   height 100%;
-  max-width: 250px;
-  max-height: 250px;
+  max-width: 300px;
+  max-height: 300px;
 `;
 
 const ColumnRight = styled.div`
@@ -140,6 +151,7 @@ export const Hero = () => {
               dragConstraints={{ left: 0, right: 250, top: 0, bottom: 50}}
               initial={{opacity: 0, y: -100}}
               animate={{opacity: 1, y: 0, transition: {duration: 1.5}}}
+              whileHover={{ scale: 1.1, shadowColor: "#FFFFFF", transition: {duration: 0.5} }}
             />
             <Image 
               src={Mercury} 
@@ -149,6 +161,7 @@ export const Hero = () => {
               dragConstraints={{ left: 50, right: 0, top: 0, bottom: 50}}
               initial={{opacity: 0, x: 100}}
               animate={{opacity: 1, x: 0, transition: {duration: 1.5}}}
+              whileHover={{ scale: 1.1, transition: {duration: 0.5} }}
             />
             <Image 
               src={Uranus} 
@@ -158,6 +171,7 @@ export const Hero = () => {
               dragConstraints={{ left: 0, right: 250, top: 0, bottom: 50}}
               initial={{opacity: 0, x: -100}}
               animate={{opacity: 1, x: 0, transition: {duration: 1.5}}}
+              whileHover={{ scale: 1.1, transition: {duration: 0.5} }}
             />
             <Image 
               src={Venus} 
@@ -167,6 +181,7 @@ export const Hero = () => {
               dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0}}
               initial={{opacity: 0, y: 100}}
               animate={{opacity: 1, y: 0, transition: {duration: 1.5}}}
+              whileHover={{ scale: 1.1, transition: {duration: 0.5} }}
             />
           </ColumnRight>
         </Container>

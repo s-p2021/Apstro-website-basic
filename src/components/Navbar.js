@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { FiMenu } from 'react-icons/fi'
-import { BsFillTriangleFill } from 'react-icons/bs'
+import { BsFillTriangleFill } from 'react-icons/bs';
+import { HashLink } from 'react-router-hash-link';
 
 import './Navbar.css';
 
@@ -16,9 +16,9 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo">
+          <HashLink smooth to={"/"} className="navbar-logo">
             <h1>logo here</h1>
-          </Link>
+          </HashLink>
           <div class="menu-icon" onClick={handleClick}>
             {click ? 
               <BsFillTriangleFill color='pink' size='35px'/> 
@@ -27,24 +27,24 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/home' className='nav-links' onClick={closeMobileMenu}>
+              <HashLink smooth to={'/home'} className='nav-links' onClick={closeMobileMenu}>
                 Home
-              </Link>
+              </HashLink>
             </li>
             <li className='nav-item'>
-              <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
+              <HashLink smooth to={'/about'} className='nav-links' onClick={closeMobileMenu}>
                 About
-              </Link>
+              </HashLink>
             </li>
             <li className='nav-item'>
-              <Link to='/contactus' className='nav-links' onClick={closeMobileMenu}>
+              <HashLink smooth to={'/contactus'} className='nav-links' onClick={closeMobileMenu}>
                 Contact Us
-              </Link>
+              </HashLink>
             </li>
             <li className='nav-item'>
-              <Link to='/download' className='nav-links' onClick={closeMobileMenu}>
+              <HashLink smooth to={'/download'} className='nav-links' onClick={closeMobileMenu}>
                 Download
-              </Link>
+              </HashLink>
             </li>
           </ul>
         </div>
