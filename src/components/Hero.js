@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import Moon from '../assets/images/moon.png';
-import Mercury from '../assets/images/mercury.png';
-import Uranus from '../assets/images/uranus.png';
-import Venus from '../assets/images/sun.png';
+import Moon from '../assets/images/squiglyplanets/green.png';
+import Mercury from '../assets/images/gradientplanets/jupiter.png';
+import Uranus from '../assets/images/gradientplanets/venus.png';
+import Venus from '../assets/images/moon.png';
 
 const Section = styled.div`
   height: 100vh;
@@ -117,7 +117,7 @@ export const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
             >
-              Apstro
+              apstro
             </motion.h1>
             <motion.p
               variants={fadeLeft}
@@ -151,7 +151,7 @@ export const Hero = () => {
               dragConstraints={{ left: 0, right: 250, top: 0, bottom: 50}}
               initial={{opacity: 0, y: -100}}
               animate={{opacity: 1, y: 0, transition: {duration: 1.5}}}
-              whileHover={{ scale: 1.1, shadowColor: "#FFFFFF", transition: {duration: 0.5} }}
+              whileHover={{ scale: 1.1, transition: {duration: 0.5} }}
             />
             <Image 
               src={Mercury} 
