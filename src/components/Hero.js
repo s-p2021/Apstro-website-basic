@@ -11,7 +11,6 @@ const Section = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #131313;
 `;
 
 const Container = styled.div`
