@@ -3,6 +3,8 @@ import { FiMenu } from 'react-icons/fi'
 import { BsFillTriangleFill } from 'react-icons/bs';
 import { HashLink } from 'react-router-hash-link';
 
+import Logo from '../assets/images/logo.png';
+
 import './Navbar.css';
 
 
@@ -17,7 +19,10 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-container">
           <HashLink smooth to={"/"} className="navbar-logo">
-            <h1>logo here</h1>
+            {/* <Image 
+              src={Logo}
+              alt='Apstro Logo'
+            /> */}
           </HashLink>
           <div class="menu-icon" onClick={handleClick}>
             {click ? 

@@ -1,5 +1,5 @@
 .navbar {
-  background: white;
+  background: transparent;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -67,7 +67,7 @@
 }
 
 .fa-bars {
-  color: #fff;
+  color: transparent;
 }
 
 .nav-links-mobile {
