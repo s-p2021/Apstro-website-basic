@@ -1,11 +1,13 @@
 import React from 'react'
-import './LandingPage.css'
-import Hero from '../components/Hero'
+import Hero from '../components/Hero';
+import AboutHero from '../components/AboutHero'
+
 
 function LandingPage() {
   return (
     <>
       <Hero />
+      <AboutHero />
     </>
   )
 }
