@@ -5,6 +5,8 @@ import Moon from '../assets/images/squiglyplanets/green.png';
 import Mercury from '../assets/images/gradientplanets/jupiter.png';
 import Uranus from '../assets/images/gradientplanets/venus.png';
 import Venus from '../assets/images/squiglyplanets/pink.png';
+import CustomButton from './CustomButton';
+
 
 const Section = styled.div`
   height: 100vh;
@@ -53,18 +55,6 @@ const ColumnLeft = styled.div`
   }
 `;
 
-const Button = styled(motion.button)`
-  padding: 1rem 3rem;
-  font-size: 1rem;
-  border: 2px solid #fff;
-  color: #fff;
-  border-radius: 20px;
-  ouline: none;
-  cursor: pointer;
-  background: transparent;
-  font-family: 'Lexend Deca', sans-serif;
-  font-weight: 100;
-`
 
 const Image = styled(motion.img)`
   position: absolute;
@@ -126,21 +116,10 @@ export const Hero = () => {
             >
               Personalised spiritual guidance powered by the planets
             </motion.p>
-            <Button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ 
-                scale: 0.95, 
-                backgroundColor: '#67F6E7',
-                border: 'none',
-                color: '#000'
-              }}
-              initial={{opacity: 0}}
-              animate={{opacity: 1, transition: {duration: 1.5}}}
-            >
-              Download Now
-            </Button>
+            <CustomButton 
+              title='Download Now'
+            />
           </ColumnLeft>
-
           <ColumnRight>
             <Image 
               src={Moon} 
