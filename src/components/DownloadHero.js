@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 import iPhoneMockup from '.././assets/images/iphonemockup.png'
 
@@ -60,7 +61,6 @@ const ColumnRight = styled.div`
   }
 `;
 
-
 const Image = styled(motion.img)`
   position: absolute;
   width: 100%;
@@ -71,10 +71,30 @@ const Image = styled(motion.img)`
 
 function AboutHero() {
 
-  const faderight = {
+  const fadeRight = {
     hidden: { opacity: 0, x: -100},
     visible: { opacity: 1, x: 0 }
   }
+
+  const fadeLeft = {
+    hidden: { opacity: 0, x: 100},
+    visible: { opacity: 1, x: 0 }
+  }
+  
+  
+
+  const controls = useAnimation();
+  const { ref, inView } = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+    if (!inView) {
+      controls.start('hidden');
+    }
+  }, [controls, inView]);
+
   return (
     <>
       <Section>
@@ -82,26 +102,31 @@ function AboutHero() {
           <ColumnLeft>
             <Image 
               src={iPhoneMockup}
+              ref={ref}
               alt='iphone mockup'
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              initial="hidden"
+              animate={controls}
+              variants={fadeRight}
               transition={{ duration: 1 }}
-              whileHover={{ scale: 1.10 }}
+              whileHover={{ scale: 1.1 }}
             />
           </ColumnLeft>
           <ColumnRight>
           <motion.h1
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1 }}
+              ref={ref}
+              initial="hidden"
+              animate={controls}
+              variants={fadeLeft}
+              transition={{ duration: 0.5 }}
             >
               apstro
             </motion.h1>
             <motion.p
-              variants={faderight}
-              initial='hidden'
-              animate='visible'
-              transition={{ duration: 1 }}
+              ref={ref}
+              initial="hidden"
+              animate={controls}
+              variants={fadeLeft}
+              transition={{ duration: 0.5 }}
             >
               Personalised spiritual guidance powered by the planets
             </motion.p>
