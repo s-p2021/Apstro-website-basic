@@ -4,6 +4,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 import iPhoneMockup from '.././assets/images/iphonemockup.png'
+import CustomButton from './CustomButton';
 
 const Section = styled.div`
   height: 100vh;
@@ -45,7 +46,7 @@ const ColumnRight = styled.div`
 
   h1 {
     margin-bottom: 0.5rem;
-    font-size: 7rem;
+    font-size: 2.3rem;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 200;
     align-text: center;
@@ -53,7 +54,7 @@ const ColumnRight = styled.div`
 
   p {
     margin: 2rem 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1.1;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 100;
@@ -67,6 +68,11 @@ const Image = styled(motion.img)`
   height 100%;
   max-width: 700px;
   max-height: 700px;
+
+  @media screen and (max-width: 768px) {
+    max-width: 600px;
+    max-height: 600px;
+  }
 `;
 
 function AboutHero() {
@@ -112,24 +118,27 @@ function AboutHero() {
             />
           </ColumnLeft>
           <ColumnRight>
-          <motion.h1
-              ref={ref}
-              initial="hidden"
-              animate={controls}
-              variants={fadeLeft}
-              transition={{ duration: 0.5 }}
-            >
-              apstro
-            </motion.h1>
-            <motion.p
-              ref={ref}
-              initial="hidden"
-              animate={controls}
-              variants={fadeLeft}
-              transition={{ duration: 0.5 }}
-            >
-              Personalised spiritual guidance powered by the planets
-            </motion.p>
+            <motion.h1
+                ref={ref}
+                initial="hidden"
+                animate={controls}
+                variants={fadeLeft}
+                transition={{ duration: 0.5 }}
+              >
+                free natal chart readings and compatibility ratings
+              </motion.h1>
+              <motion.p
+                ref={ref}
+                initial="hidden"
+                animate={controls}
+                variants={fadeLeft}
+                transition={{ duration: 0.5 }}
+              >
+                Learning about your Sun sign is like learning about a stranger. It’s time for something much deeper and insightful. We'll show you practical insights which are aligned to your highest purpose.
+              </motion.p>
+              <CustomButton
+                title='Download for IOS'
+              />
           </ColumnRight>
         </Container>
       </Section>

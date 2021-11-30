@@ -82,6 +82,7 @@
   .NavbarItems {
     position: relative;
     display: flex;
+    align-content: center;
   }
 
   .nav-menu {
@@ -98,7 +99,7 @@
   }
 
   .nav-menu.active {
-    background: #f0ea97;
+    background: #000000;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -111,6 +112,7 @@
     width: 100%;
     display: table;
     align-content: center;
+    justify-content: space-around;
   }
 
   .nav-links:hover {
@@ -121,9 +123,8 @@
 
   .navbar-logo {
     position: absolute;
-    top: 0;
     left: 0;
-    transform: translate(25%, 50%);
+
   }
 
   .menu-icon {

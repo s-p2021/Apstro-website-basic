@@ -62,6 +62,11 @@ const Image = styled(motion.img)`
   height 100%;
   max-width: 300px;
   max-height: 300px;
+
+  @media screen and (max-width: 768px) {
+    max-width: 200px;
+    max-height: 200px;
+  }
 `;
 
 const ColumnRight = styled.div`
@@ -77,16 +82,35 @@ const ColumnRight = styled.div`
     left: 10px;
   }
   ${Image}:nth-child(2) {
-    top: 170px;
+    top: 195px;
     right: 10px;
   }
   ${Image}:nth-child(3) {
-    top: 350px;
+    top: 375px;
     left: 50px;
   }
   ${Image}:nth-child(4) {
-    bottom: 100px;
-    right: 75px;
+    top: 425px;
+    right: 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    ${Image}:nth-child(1) {
+      top: 75px;
+      right: 10px;
+    }
+    ${Image}:nth-child(2) {
+      top: 275px;
+      right: 10px;
+    }
+    ${Image}:nth-child(3) {
+      top: 475px;
+      left: 50px;
+    }
+    ${Image}:nth-child(4) {
+      top: 675px;
+      right: 50px;
+    }
   }
 `;
 
@@ -114,7 +138,7 @@ export const Hero = () => {
               animate='visible'
               transition={{ duration: 1 }}
             >
-              Personalised spiritual guidance powered by the planets
+              personalised guidance powered by the planets
             </motion.p>
             <CustomButton 
               title='Download Now'
