@@ -1,10 +1,12 @@
 
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import LandingPage from './pages/LandingPage';
 import { Helmet } from 'react-helmet';
 import ReactGa from 'react-ga';
+
+import Navbar from './components/Navbar';
+import LandingPage from './pages/LandingPage';
+import Footer from './components/Footer'
 
 import './App.css';
 
@@ -12,8 +14,7 @@ function App() {
 
   useEffect(() => {
     ReactGa.initialize('UA-196896744-1');
-    ReactGa.pageview('/app')
-    console.log('mounted')
+    ReactGa.pageview('/')
   }, [])
 
   return (
@@ -34,6 +35,7 @@ function App() {
           <Switch>
             <Route path="/" component={LandingPage}/>
           </Switch>
+        <Footer />
       </Router>
     </>
   );

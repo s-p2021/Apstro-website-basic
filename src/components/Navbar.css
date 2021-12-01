@@ -104,6 +104,7 @@
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
+    display: flex;
   }
 
   .nav-links {
@@ -111,12 +112,10 @@
     padding: 2rem;
     width: 100%;
     display: table;
-    align-content: center;
-    justify-content: space-around;
   }
 
   .nav-links:hover {
-    background-color: #fff;
+    background-color: rgb(113, 225, 253);
     color: #f097e4;
     border-radius: 0;
   }
@@ -124,7 +123,6 @@
   .navbar-logo {
     position: absolute;
     left: 0;
-
   }
 
   .menu-icon {

@@ -125,7 +125,7 @@ function AboutHero() {
                 variants={fadeLeft}
                 transition={{ duration: 0.5 }}
               >
-                free natal chart readings and compatibility ratings
+                free natal chart readings and compatibility readings
               </motion.h1>
               <motion.p
                 ref={ref}
