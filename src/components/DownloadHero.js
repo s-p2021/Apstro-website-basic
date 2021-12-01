@@ -7,7 +7,7 @@ import iPhoneMockup from '.././assets/images/iphonemockup.png'
 import CustomButton from './CustomButton';
 
 const Section = styled.div`
-  height: 100vh;
+  height: 130vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,10 +69,6 @@ const Image = styled(motion.img)`
   max-width: 700px;
   max-height: 700px;
 
-  @media screen and (max-width: 768px) {
-    max-width: 600px;
-    max-height: 600px;
-  }
 `;
 
 function AboutHero() {

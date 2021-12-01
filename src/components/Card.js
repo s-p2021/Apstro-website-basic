@@ -5,10 +5,9 @@ import { useInView } from 'react-intersection-observer';
 import './Card.css';
 
 function Card(props) {
-
   const fadeUp = {
     hidden: { opacity: 0, y: 100},
-    visible: { opacity: 0.65, y: 0 }
+    visible: { opacity: 0.5, y: 0 }
   }
 
   const controls = useAnimation();
@@ -31,7 +30,7 @@ function Card(props) {
         initial="hidden"
         animate={controls}
         variants={fadeUp}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.6 }}
         // initial={{opacity: 0}}
         // animate={{opacity: 1, transition: {duration: 1.5}}}
       >

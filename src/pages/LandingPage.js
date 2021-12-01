@@ -16,9 +16,9 @@ function LandingPage() {
         <Transition height="100vh" from="#5c8bfb" to="#f097b2" position={0.75} >
           <AboutHero id='about'/>
         </Transition>
-        <Transition height="100vh" from="#f097b2" to="#ffe8a2" position={0.75} >
+        {/* <Transition height="100vh" from="#f097b2" to="#ffe8a2" position={0.75} >
           <DownloadHero id='about'/>
-        </Transition>
+        </Transition> */}
       </AnimatedBg>
     </>
   )
