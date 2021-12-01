@@ -9,12 +9,18 @@ function LandingPage() {
     <>
       <AnimatedBg>
         <Transition from="#000000" to="#000000" position={0.75} />
-          <Hero id='home'/>
+          <div id='home'>
+            <Hero />
+          </div>
         <Transition from="#000000" to="#5c8bfb" position={0.75} >
-          <DownloadHero id='download'/>
+          <div id='download'>
+            <DownloadHero/>
+          </div>
         </Transition>
         <Transition height="100vh" from="#5c8bfb" to="#f097b2" position={0.75} >
-          <AboutHero id='about'/>
+          <div id='about'>
+            <AboutHero/>
+          </div>
         </Transition>
         {/* <Transition height="100vh" from="#f097b2" to="#ffe8a2" position={0.75} >
           <DownloadHero id='about'/>
