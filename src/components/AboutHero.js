@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 import Card from './Card'
 
 const Section = styled.div`
-  height: 100vh;
+  height: 150vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +19,10 @@ const Section = styled.div`
     font-weight: 200;
     align-text: center;
     color: white;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 200vh;
   }
 `;
 
@@ -61,9 +65,17 @@ function AboutHero() {
           transition={{ duration: 0.6 }}
         >how can apstro help you?</motion.h1>
         <CardContainer>
-          <Card title='learn'/>
-          <Card title='guidance'/> 
-          <Card title='compatibility'/> 
+          <Card 
+            title='learn'
+            paragraph=''
+          />
+          <Card 
+            title='guidance'
+          /> 
+          <Card 
+            title='social'
+            paragraph='Apstro is a social first app where you can connect with your friends. Just as learning about yourself can help you understand yourself, it can help you understand your friends, family and partners. It helps spark meaningful conversations to overcome barriers in relationships and build meaningful connections.'
+          /> 
         </CardContainer>
       </Section>
     </>

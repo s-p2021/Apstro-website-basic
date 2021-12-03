@@ -9,7 +9,7 @@ import CustomButton from './CustomButton';
 
 
 const Section = styled.div`
-  height: 100vh;
+  height: 120vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,14 +32,14 @@ const ColumnLeft = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 5rem 2rem;
+  padding: 1rem 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
 
   h1 {
-    margin-bottom: 0.5rem;
-    font-size: 7rem;
+
+    font-size: 6rem;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 200;
     align-text: center;
@@ -51,7 +51,15 @@ const ColumnLeft = styled.div`
     line-height: 1.1;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 100;
-    align-text: centre
+    align-text: center;
+    align-self: center;
+    padding: 1rem 0.5rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    p {
+      font-size: 1.5rem;
+    }
   }
 `;
 
@@ -60,12 +68,14 @@ const Image = styled(motion.img)`
   position: absolute;
   width: 100%;
   height 100%;
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 275px;
+  max-height: 275px;
 
   @media screen and (max-width: 768px) {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 160px;
+    max-height: 160px;
+    width: 100%;
+    height 100%;
   }
 `;
 
@@ -73,43 +83,43 @@ const ColumnRight = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
   position: relative;
 
 
   ${Image}:nth-child(1) {
-    top: 10px;
+    top: 20px;
     left: 10px;
   }
   ${Image}:nth-child(2) {
-    top: 195px;
+    top: 100px;
     right: 10px;
   }
   ${Image}:nth-child(3) {
-    top: 375px;
-    left: 50px;
+    top: 315px;
+    left: 100px;
   }
   ${Image}:nth-child(4) {
-    top: 425px;
+    top: 300px;
     right: 50px;
   }
 
   @media screen and (max-width: 768px) {
     ${Image}:nth-child(1) {
-      top: 75px;
-      right: 10px;
+      top: 0px;
+      left: 2
     }
     ${Image}:nth-child(2) {
-      top: 275px;
-      right: 10px;
+      top: 125px;
+      left: 1
     }
     ${Image}:nth-child(3) {
-      top: 475px;
-      left: 50px;
+      top: 250px;
+      left: 0
     }
     ${Image}:nth-child(4) {
-      top: 675px;
-      right: 50px;
+      top: 375px;
+      left: 3
     }
   }
 `;

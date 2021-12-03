@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import DownloadHero from '../components/DownloadHero'
 import { AnimatedBg, Transition } from 'scroll-background';
 import AboutHero from '../components/AboutHero';
+import Footer from '../components/Footer';
 
 function LandingPage() {
   return (
@@ -17,10 +18,11 @@ function LandingPage() {
             <DownloadHero/>
           </div>
         </Transition>
-        <Transition height="100vh" from="#5c8bfb" to="#f097b2" position={0.75} >
+        <Transition from="#5c8bfb" to="#f097b2" position={0.75} >
           <div id='about'>
             <AboutHero/>
           </div>
+          <Footer />
         </Transition>
         {/* <Transition height="100vh" from="#f097b2" to="#ffe8a2" position={0.75} >
           <DownloadHero id='about'/>

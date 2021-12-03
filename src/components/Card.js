@@ -31,8 +31,6 @@ function Card(props) {
         animate={controls}
         variants={fadeUp}
         transition={{ duration: 0.6 }}
-        // initial={{opacity: 0}}
-        // animate={{opacity: 1, transition: {duration: 1.5}}}
       >
         <div>
           <h2 className='title'>{props.title}</h2>

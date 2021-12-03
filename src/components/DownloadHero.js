@@ -7,7 +7,7 @@ import iPhoneMockup from '.././assets/images/iphonemockup.png'
 import CustomButton from './CustomButton';
 
 const Section = styled.div`
-  height: 130vh;
+  height: 150vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,14 +60,30 @@ const ColumnRight = styled.div`
     font-weight: 100;
     align-text: centre
   }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+  }
+  
 `;
 
 const Image = styled(motion.img)`
   position: absolute;
   width: 100%;
   height 100%;
-  max-width: 700px;
-  max-height: 700px;
+  max-width: 550px;
+  max-height: 550px;
+
+  @media screen and (max-width: 768px) {
+    max-width: 470px;
+    max-height: 470px;
+  }
 
 `;
 
