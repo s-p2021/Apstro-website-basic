@@ -8,7 +8,11 @@
 }
 
 .links {
-
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: 5px;
 }
 
 .social-logos {
@@ -17,11 +21,20 @@
 
 .social-section {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: flex-start;
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   left: 0
+}
+
+@media screen and (max-width: 960px) {
+  .footer {
+    height: 200px;
+  }
+
+  .links {
+    flex-direction: column;
+    margin-left: 2rem;
+  }
 }

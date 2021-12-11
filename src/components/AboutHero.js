@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 import Card from './Card'
 
 const Section = styled.div`
-  height: 150vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,8 +21,8 @@ const Section = styled.div`
     color: white;
   }
 
-  @media screen and (max-width: 768px) {
-    height: 200vh;
+  @media screen and (max-width: 960px) {
+    height: 175vh;
   }
 `;
 
@@ -67,7 +67,7 @@ function AboutHero() {
         <CardContainer>
           <Card 
             title='learn'
-            paragraph='the planets don’t govern our lives, they create a set of conditions we can make the most of. we teach you the laws that govern this empower you to use it in your everyday life, relationships and self development journey. no more cryptic birth charts or hours of researching, apstro does the work for you.'
+            paragraph='the planets don’t govern our lives, they create a set of conditions we can make the most of. we teach you the laws that govern this and empower you to use it in your everyday life, relationships and self development journey. no more cryptic birth charts or hours of researching, apstro does the work for you.'
           />
           <Card 
             title='guidance'

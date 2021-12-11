@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import ReactGa from 'react-ga';
+import Iubenda from 'react-iubenda-policy'
 
 import Navbar from './components/Navbar';
 import LandingPage from './pages/LandingPage';
