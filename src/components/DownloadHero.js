@@ -46,7 +46,7 @@ const ColumnRight = styled.div`
 
   h1 {
     margin-bottom: 0.5rem;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 200;
     text-align: center;
@@ -54,7 +54,7 @@ const ColumnRight = styled.div`
 
   p {
     margin: 2rem 0;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 1.1;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 100;
@@ -147,7 +147,7 @@ function AboutHero() {
                 variants={fadeLeft}
                 transition={{ duration: 0.5 }}
               >
-                we know you’re much more than your just your sun sign, so we map the planet’s position the minute you were born to provide a comprehensive report of your self, past, present and future. it’s time for something much much deeper and insightful; download apstro today.
+                we know you’re much more than your just your sun sign, so we map the planet’s position the minute you were born to provide a comprehensive report of your self, past, present and future. it’s time for something deeper and more insightful; download apstro today.
               </motion.p>
               <CustomButton
                 title='download for IOS'

@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 import Card from './Card'
 
 const Section = styled.div`
-  height: 100vh;
+  height: 150vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@ const Section = styled.div`
   }
 
   @media screen and (max-width: 960px) {
-    height: 175vh;
+    height: 190vh;
   }
 `;
 

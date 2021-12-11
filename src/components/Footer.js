@@ -39,16 +39,16 @@ function Footer() {
           </Iubenda>
         </div>
         <div className='social-section'>
-          <a target="_blank" href="https://www.instagram.com/ap.stro/">
+          <a target="_blank" href="https://www.instagram.com/ap.stro/" rel="noreferrer">
             <BsInstagram color='white' className='social-logos' size={40}/>
           </a>
-          <a target="_blank" href="https://twitter.com/_apstro">
+          <a target="_blank" href="https://twitter.com/_apstro" rel="noreferrer">
             <BsTwitter color='white' className='social-logos' size={40}/>
           </a>
-          <a target="_blank" href="https://www.tiktok.com/@_apstro?">
+          <a target="_blank" href="https://www.tiktok.com/@_apstro?" rel="noreferrer">
             <FaTiktok color='white' className='social-logos' size={40}/>
           </a>
-          <a target="_blank" href="mailto:help@apstro.app">
+          <a target="_blank" href="mailto:help@apstro.app" rel="noreferrer">
             <BsMailbox color='white' className='social-logos' size={40}/>
           </a>
         </div>
