@@ -9,7 +9,7 @@ import CustomButton from './CustomButton';
 
 
 const Section = styled.div`
-  height: 120vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,13 +32,12 @@ const ColumnLeft = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 1rem 0.5rem;
+  padding: 5rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 
   h1 {
-
     font-size: 6rem;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 200;
@@ -51,12 +50,14 @@ const ColumnLeft = styled.div`
     line-height: 1.1;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 100;
-    align-text: center;
+    text-align: center;
     align-self: center;
     padding: 1rem 0.5rem;
   }
 
   @media screen and (max-width: 768px) {
+    padding: 1rem 0.5rem;
+
     p {
       font-size: 1.5rem;
     }
@@ -89,7 +90,7 @@ const ColumnRight = styled.div`
 
   ${Image}:nth-child(1) {
     top: 20px;
-    left: 10px;
+    left: 60px;
   }
   ${Image}:nth-child(2) {
     top: 100px;
@@ -107,7 +108,7 @@ const ColumnRight = styled.div`
   @media screen and (max-width: 768px) {
     ${Image}:nth-child(1) {
       top: 0px;
-      left: 2
+      left: 0
     }
     ${Image}:nth-child(2) {
       top: 125px;

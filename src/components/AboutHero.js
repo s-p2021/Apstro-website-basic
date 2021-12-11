@@ -17,7 +17,7 @@ const Section = styled.div`
     font-size: 3.5rem;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 200;
-    align-text: center;
+    text-align: center;
     color: white;
   }
 
@@ -67,14 +67,15 @@ function AboutHero() {
         <CardContainer>
           <Card 
             title='learn'
-            paragraph=''
+            paragraph='the planets don’t govern our lives, they create a set of conditions we can make the most of. we teach you the laws that govern this empower you to use it in your everyday life, relationships and self development journey. no more cryptic birth charts or hours of researching, apstro does the work for you.'
           />
           <Card 
             title='guidance'
+            paragraph='apstro combines ancient wisdom, modern technology and science to immerse you in self introspection, empowering you to understand yourself. We will help you embark on a self development journey to learn your strengths and weaknesses so you can break the cycle of self destructive behaviour and utilise your strengths.'
           /> 
           <Card 
             title='social'
-            paragraph='Apstro is a social first app where you can connect with your friends. Just as learning about yourself can help you understand yourself, it can help you understand your friends, family and partners. It helps spark meaningful conversations to overcome barriers in relationships and build meaningful connections.'
+            paragraph='just as learning about your birth chart can help you understand yourself, it can help you understand your friends, family and partners. we help spark meaningful conversations to overcome barriers in relationships and build deeper connections by providing compatibility ratings and reports.'
           /> 
         </CardContainer>
       </Section>

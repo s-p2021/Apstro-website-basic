@@ -40,7 +40,7 @@ const ColumnRight = styled.div`
   color: #fff;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 3rem;
   position: relative;
   font-family: 'Lexend Deca', sans-serif;
 
@@ -49,7 +49,7 @@ const ColumnRight = styled.div`
     font-size: 2.3rem;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 200;
-    align-text: center;
+    text-align: center;
   }
 
   p {
@@ -58,10 +58,11 @@ const ColumnRight = styled.div`
     line-height: 1.1;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 100;
-    align-text: centre
+    text-align: center;
   }
 
   @media screen and (max-width: 768px) {
+    padding: 0rem;
     h1 {
       font-size: 1.5rem;
       margin: 1rem 0;
@@ -137,7 +138,7 @@ function AboutHero() {
                 variants={fadeLeft}
                 transition={{ duration: 0.5 }}
               >
-                free natal chart readings and compatibility readings
+                free natal chart readings and compatibility ratings
               </motion.h1>
               <motion.p
                 ref={ref}
@@ -146,10 +147,10 @@ function AboutHero() {
                 variants={fadeLeft}
                 transition={{ duration: 0.5 }}
               >
-                Learning about your Sun sign is like learning about a stranger. It’s time for something much deeper and insightful. We'll show you practical insights which are aligned to your highest purpose.
+                we know you’re much more than your just your sun sign, so we map the planet’s position the minute you were born to provide a comprehensive report of your self, past, present and future. it’s time for something much much deeper and insightful; download apstro today.
               </motion.p>
               <CustomButton
-                title='Download for IOS'
+                title='download for IOS'
               />
           </ColumnRight>
         </Container>

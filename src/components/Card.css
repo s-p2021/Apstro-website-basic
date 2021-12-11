@@ -18,17 +18,18 @@
   font-size: 3rem;
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 200;
-  align-text: center;
-  color: 'white'
+  text-align: center;
+  color: 'white';
+  align-self: center
 }
 
 .paragraph {
-  margin: 2rem 0;
-  font-size: 1.6rem;
+  margin: 1rem 0;
+  font-size: 1.35rem;
   line-height: 1.1;
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 100;
-  align-text: center
+  text-align: center;
 }
 
 @media screen and (max-width: 960px) {

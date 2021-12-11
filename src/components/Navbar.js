@@ -28,22 +28,22 @@ function Navbar() {
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <HashLink smooth to={'/home#home'} className='nav-links' onClick={closeMobileMenu}>
-                Home
+                home
               </HashLink>
             </li>
             <li className='nav-item'>
               <HashLink smooth to={'/#about'} className='nav-links' onClick={closeMobileMenu}>
-                About
+                about
               </HashLink>
             </li>
             <li className='nav-item'>
               <HashLink smooth to={'/#contact-us'} className='nav-links' onClick={closeMobileMenu}>
-                Contact Us
+                contact us
               </HashLink>
             </li>
             <li className='nav-item'>
               <HashLink smooth to={'/#download'} className='nav-links' onClick={closeMobileMenu}>
-                Download
+                download
               </HashLink>
             </li>
           </ul>
