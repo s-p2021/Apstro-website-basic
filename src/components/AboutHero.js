@@ -23,6 +23,10 @@ const Section = styled.div`
 
   @media screen and (max-width: 960px) {
     height: 190vh;
+
+    h1 {
+      font-size: 2.5rem
+    }
   }
 `;
 

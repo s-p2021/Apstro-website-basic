@@ -36,6 +36,7 @@ const ColumnLeft = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
 
   h1 {
     font-size: 6rem;
@@ -57,9 +58,13 @@ const ColumnLeft = styled.div`
 
   @media screen and (max-width: 768px) {
     padding: 1rem 0.5rem;
+    margin-top: 20px;
 
+    h1 {
+      font-size: 4.2rem;
+    }
     p {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
   }
 `;
@@ -73,8 +78,8 @@ const Image = styled(motion.img)`
   max-height: 275px;
 
   @media screen and (max-width: 768px) {
-    max-width: 160px;
-    max-height: 160px;
+    max-width: 130px;
+    max-height: 130px;
     width: 100%;
     height 100%;
   }
@@ -86,6 +91,7 @@ const ColumnRight = styled.div`
   align-items: center;
   padding: 1rem;
   position: relative;
+  margin-top: 20px;
 
 
   ${Image}:nth-child(1) {
@@ -106,6 +112,8 @@ const ColumnRight = styled.div`
   }
 
   @media screen and (max-width: 768px) {
+    margin-top: 80px;
+
     ${Image}:nth-child(1) {
       top: 0px;
       left: 0

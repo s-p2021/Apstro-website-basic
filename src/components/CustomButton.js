@@ -14,6 +14,10 @@ const Button = styled(motion.button)`
   background: transparent;
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 100;
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem 2rem;
+  }
 `
 
 function CustomButton(props) {

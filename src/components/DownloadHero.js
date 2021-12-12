@@ -64,11 +64,11 @@ const ColumnRight = styled.div`
   @media screen and (max-width: 768px) {
     padding: 0rem;
     h1 {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       margin: 1rem 0;
     }
     p {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
   }
   
@@ -82,8 +82,8 @@ const Image = styled(motion.img)`
   max-height: 550px;
 
   @media screen and (max-width: 768px) {
-    max-width: 470px;
-    max-height: 470px;
+    max-width: 400px;
+    max-height: 400px;
   }
 
 `;
