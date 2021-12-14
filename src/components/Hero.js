@@ -36,7 +36,7 @@ const ColumnLeft = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 30px;
 
   h1 {
     font-size: 6rem;
@@ -91,7 +91,7 @@ const ColumnRight = styled.div`
   align-items: center;
   padding: 1rem;
   position: relative;
-  margin-top: 20px;
+  margin-top: 15px;
 
 
   ${Image}:nth-child(1) {

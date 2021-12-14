@@ -8,13 +8,12 @@ import { FaTiktok } from 'react-icons/fa';
 import './Footer.css';
 
 const Text = styled.div`
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 200;
   align-text: center;
   color: white;
-  width: 175px;
-  margin: 1.5rem;
+  width: 180px;
   text-decoration: none;
 
   @media screen and (max-width: 960px) {

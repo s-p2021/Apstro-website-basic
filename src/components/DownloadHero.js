@@ -66,9 +66,11 @@ const ColumnRight = styled.div`
     h1 {
       font-size: 1.25rem;
       margin: 1rem 0;
+      margin-right: 1rem
     }
     p {
       font-size: 1rem;
+      margin-right: 1rem
     }
   }
   
