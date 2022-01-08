@@ -1,14 +1,16 @@
 import React from 'react'
-import Hero from '../components/Hero';
-import DownloadHero from '../components/DownloadHero'
+import Hero from '../components/heroComponents/Hero';
+import DownloadHero from '../components/heroComponents/DownloadHero'
 import { AnimatedBg, Transition } from 'scroll-background';
-import AboutHero from '../components/AboutHero';
-import Footer from '../components/Footer';
+import AboutHero from '../components/heroComponents/AboutHero';
+import Footer from '../components/heroComponents/Footer';
+import Navbar from '../components/heroComponents/Navbar';
 
 function LandingPage() {
   return (
     <>
       <AnimatedBg>
+        <Navbar />
         <Transition from="#000000" to="#000000" position={0.75} />
           <div id='home'>
             <Hero />

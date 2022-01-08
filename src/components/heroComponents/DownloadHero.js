@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-import iPhoneMockup from '.././assets/images/iphonemockup.png'
+import iPhoneMockup from '../../assets/images/iphonemockup.png'
 import CustomButton from './CustomButton';
 
 const Section = styled.div`

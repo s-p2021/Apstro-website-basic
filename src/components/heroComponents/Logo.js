@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-import logoPng from '../assets/images/logo.png'
+import logoPng from '../../assets/images/logo.png'
 
 const Image = styled(motion.img)`
   width: 70px;

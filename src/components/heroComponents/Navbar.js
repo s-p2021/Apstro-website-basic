@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FiMenu } from 'react-icons/fi'
 import { BsFillTriangleFill } from 'react-icons/bs';
 import { HashLink } from 'react-router-hash-link';
-
+import { Link } from "react-router-dom";
 import Logo from './Logo';
 import './Navbar.css';
 
@@ -16,7 +16,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <HashLink smooth to={"/"} className="navbar-logo">
+          <HashLink smooth to={"/home"} className="navbar-logo">
             <Logo />
           </HashLink>
           <div class="menu-icon" onClick={handleClick}>
@@ -27,22 +27,27 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
+              <Link to={'/signup'} className='nav-links' onClick={closeMobileMenu}>
+                login 
+              </Link>
+            </li>
+            <li className='nav-item'>
               <HashLink smooth to={'/home#home'} className='nav-links' onClick={closeMobileMenu}>
                 home
               </HashLink>
             </li>
-            <li className='nav-item'>
+            {/* <li className='nav-item'>
               <HashLink smooth to={'/#about'} className='nav-links' onClick={closeMobileMenu}>
                 about
               </HashLink>
-            </li>
+            </li> */}
             <li className='nav-item'>
-              <HashLink smooth to={'/#contact-us'} className='nav-links' onClick={closeMobileMenu}>
+              <HashLink smooth to={'/home/#contact-us'} className='nav-links' onClick={closeMobileMenu}>
                 contact us
               </HashLink>
             </li>
             <li className='nav-item'>
-              <HashLink smooth to={'/#download'} className='nav-links' onClick={closeMobileMenu}>
+              <HashLink smooth to={'/home/#download'} className='nav-links' onClick={closeMobileMenu}>
                 download
               </HashLink>
             </li>

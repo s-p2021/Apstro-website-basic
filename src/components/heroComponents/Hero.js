@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import Moon from '../assets/images/squiglyplanets/green.png';
-import Mercury from '../assets/images/gradientplanets/jupiter.png';
-import Uranus from '../assets/images/gradientplanets/venus.png';
-import Venus from '../assets/images/squiglyplanets/pink.png';
+import Moon from '../../assets/images/squiglyplanets/green.png';
+import Mercury from '../../assets/images/gradientplanets/jupiter.png';
+import Uranus from '../../assets/images/gradientplanets/venus.png';
+import Venus from '../../assets/images/squiglyplanets/pink.png';
 import CustomButton from './CustomButton';
 
 

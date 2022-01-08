@@ -53,6 +53,7 @@ function CustomButton(props) {
           border: 'none',
           color: '#000'
         }}
+        onClick={props.onClick}
       >
         {props.title}
       </Button>
